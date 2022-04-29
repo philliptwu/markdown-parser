@@ -48,7 +48,7 @@ public class MarkdownParseTest {
     @Test
     public void MarkdownParseTest5() throws IOException {
         String content = Files.readString(Path.of("test-file6.md"));
-        assertEquals(List.of("page.com"), MarkdownParse.getLinks(content));
+        assertEquals(List.of(), MarkdownParse.getLinks(content));
     }
 
     @Test
